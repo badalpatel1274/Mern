@@ -13,6 +13,7 @@ import ArrayDemo3 from './components/ArrayDemo3'
 import ArrayDemo4 from './components/ArrayDemo4'
 import ArrayDemo5 from './components/ArrayDemo5'
 import ArrayDemo6 from './components/ArrayDemo6'
+import ArrayDemo7 from './components/ArrayDemo7'
 function App() {
 
   return (
@@ -28,14 +29,16 @@ function App() {
       <hr />
       <ArrayDemo2/>
       <br /><hr /> */}
-      <ArrayDemo3/>
+      {/* <ArrayDemo3/>
       <hr /><hr />
       <ArrayDemo4/>
       <hr /><hr />
       <ArrayDemo5/>
 
       <hr />
-      <ArrayDemo6/>
+      <ArrayDemo6/> */}
+      <hr />
+      <ArrayDemo7/>
 
 
     </>
