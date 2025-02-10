@@ -14,6 +14,9 @@ import ArrayDemo4 from './components/ArrayDemo4'
 import ArrayDemo5 from './components/ArrayDemo5'
 import ArrayDemo6 from './components/ArrayDemo6'
 import ArrayDemo7 from './components/ArrayDemo7'
+import UseStateDemo1 from './components/UseStateDemo1'
+import UseStateDemo2 from './components/UseStateDemo2'
+import InputDemo1 from './components/InputDemo1'
 function App() {
 
   return (
@@ -32,13 +35,17 @@ function App() {
       {/* <ArrayDemo3/>
       <hr /><hr />
       <ArrayDemo4/>
-      <hr /><hr />
-      <ArrayDemo5/>
+      <hr /><hr /> */}
+      {/* <ArrayDemo5/>
 
       <hr />
-      <ArrayDemo6/> */}
+      <ArrayDemo6/>
       <hr />
-      <ArrayDemo7/>
+      <ArrayDemo7/> */}
+
+      {/* <UseStateDemo1/>
+      <UseStateDemo2/> */}
+      <InputDemo1/>
 
 
     </>
