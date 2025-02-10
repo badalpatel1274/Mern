@@ -17,6 +17,8 @@ import ArrayDemo7 from './components/ArrayDemo7'
 import UseStateDemo1 from './components/UseStateDemo1'
 import UseStateDemo2 from './components/UseStateDemo2'
 import InputDemo1 from './components/InputDemo1'
+import InputDemo2 from './components/InputDemo2'
+import InputDemo3 from './components/InputDemo3'
 function App() {
 
   return (
@@ -45,7 +47,9 @@ function App() {
 
       {/* <UseStateDemo1/>
       <UseStateDemo2/> */}
-      <InputDemo1/>
+      {/* <InputDemo1/> */}
+      {/* <InputDemo2/> */}
+      <InputDemo3/>
 
 
     </>
