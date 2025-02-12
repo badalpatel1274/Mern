@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const HotstarMovies = () => {
   return (
 
-    <div style={{ textAlign: 'center', backgroundColor: "black" ,color:'white' , fontFamily:'initial'}}>
-    <h1>Movie</h1>
-    <div className="flex" style={{display:'flex', justifyContent:'space-between'}}>
+    <div style={{ textAlign: 'center', backgroundColor: "black", color: 'white', fontFamily: 'initial' }}>
+      <h1>Movie</h1>
+      {/* <div className="flex" style={{display:'flex', justifyContent:'space-between'}}>
 
     <div class="card" style={{ width: '18.5rem' , backgroundColor:'black'}}>
       <img class="card-img-top" src="https://i.pinimg.com/736x/5f/65/1a/5f651ac6cbd342b3b700f6276975e7bc.jpg" alt="Card image cap" style={{height:'500px',objectFit:'cover'}} />
@@ -40,8 +41,22 @@ const HotstarMovies = () => {
       </div>
       
     </div>
+    </div> */}
+      <ul>
+        <li>
+          <Link to="/play/scam1992">Scam1992</Link>
+        </li>
+
+        <li>
+
+          <Link to="/play/Jawan">Jawan</Link>
+        </li>
+        <li>
+          <Link to="/play/123-456">Pushpa</Link>
+
+        </li>
+      </ul>
     </div>
-  </div>
 
   )
 }

@@ -22,6 +22,27 @@ const HotstarNav = () => {
         <li className="nav-item">
           <Link className="nav-link" to="/tvshow">Tv Shows</Link>
         </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/formdemo1">FormDemo1</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/formdemo2">FormDemo2</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/formdemo3">FormDemo3</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/formdemo4">FormDemo4</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/formdemo5">FormDemo5</Link>
+        </li> <li className="nav-item">
+          <Link className="nav-link" to="/formdemo6">FormDemo6</Link>
+        </li> <li className="nav-item">
+          <Link className="nav-link" to="/formdemo7">FormDemo7</Link>
+        </li> <li className="nav-item">
+          <Link className="nav-link" to="/formdemo8">FormDemo8</Link>
+        </li>
        
       </ul>
     </div>

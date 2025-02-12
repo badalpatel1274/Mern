@@ -11,6 +11,15 @@ import HotstarWelcome from './components/hotstar/HotstarWelcome'
 import Hotstar404 from './components/hotstar/Hotstar404'
 import HotstarSports from './components/hotstar/HotstarSports'
 import HotstarTvShows from './components/hotstar/HotstarTvShows'
+import Play from './components/hotstar/Play'
+import FormDemo1 from './components/forms/FormDemo1'
+import FormDemo2 from './components/forms/FormDemo2'
+import FormDemo3 from './components/forms/FormDemo3'
+import FormDemo4 from './components/forms/FormDemo4'
+import FormDemo5 from './components/forms/FormDemo5'
+import FormDemo6 from './components/forms/FormDemo6'
+import FormDemo7 from './components/forms/FormDemo7'
+import FormDemo8 from './components/forms/FormDemo8'
 
 
 function App() {
@@ -21,9 +30,20 @@ function App() {
     <Routes>
       {/* <Route path='/' element={<HotstarWelcome/>}></Route> */}
       <Route path='/' element={<HotstarHome/>}></Route>
+      <Route path='/play/:id' element={<Play/>}></Route>
       <Route path='/movies' element={<HotstarMovies/>}></Route>
       <Route path='/sports' element={<HotstarSports/>}></Route>
       <Route path='/tvshow' element={<HotstarTvShows/>}></Route>
+      <Route path='/formdemo1' element={<FormDemo1/>}></Route>
+      <Route path='/formdemo2' element={<FormDemo2/>}></Route>
+      <Route path='/formdemo3' element={<FormDemo3/>}></Route>
+      <Route path='/formdemo4' element={<FormDemo4/>}></Route>
+      <Route path='/formdemo5' element={<FormDemo5/>}></Route>
+      <Route path='/formdemo6' element={<FormDemo6/>}></Route>
+      <Route path='/formdemo7' element={<FormDemo7/>}></Route>
+      <Route path='/formdemo8' element={<FormDemo8/>}></Route>
+
+
       <Route path='/*' element={<Hotstar404/>}></Route>
     </Routes>
     </>
