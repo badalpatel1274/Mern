@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 
 const FormDemo4 = () => {
 
+  const [output, setoutput] = useState({})
+  const [isSubmitted, setisSubmitted] = useState(false)
 const {register,handleSubmit ,formState:{errors}} =useForm()
 const submitHandler =(data)=>{
     console.log(data)
+    setoutput(data)
+    setisSubmitted(true)
 }
 
 const validationSchema={
@@ -77,13 +81,22 @@ const validationSchema={
             }
           </span>
           <br />
+              <label htmlFor="">Color</label>
+              <input type="color" {...register("color")} />
+          <br />
           <input type="submit" />
         </div>
-                <h1>Validation Is Completed</h1>
 
           
       </form>
+        {isSubmitted == true ?( <div style={{color:output.color}}>
+        <h1>name={output?.name}</h1>
+        <h1>age={output?.age}</h1>
+        <h1>email={output?.email}</h1>
+      </div>):""}
+     
     </div>
+    <h1>Validation Is Completed</h1>
   </div>
   )
 }
