@@ -13,6 +13,14 @@ const validationSchema={
     required: {
       value: true,
       message: "ItemName Is Required*"
+    },
+    minLength:{
+      value:3,
+      message:"length size is 2"
+    },
+    maxLength:{
+      value:8,
+      message:"max length is 8"
     }
   },
   time: {

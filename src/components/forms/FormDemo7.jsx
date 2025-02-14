@@ -10,12 +10,20 @@ const FormDemo7 = () => {
 
   const validationSchema ={
 
-      name :{
-            required:{
-              value:true,
-              message:"name is required"
-            }
+    name: {
+      required: {
+        value: true,
+        message: "ItemName Is Required*"
       },
+      minLength:{
+        value:3,
+        message:"length size is 2"
+      },
+      maxLength:{
+        value:8,
+        message:"max length is 8"
+      }
+    },
       color :{
         required:{
           value:true,
