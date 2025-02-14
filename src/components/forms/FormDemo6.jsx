@@ -2,9 +2,27 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 
 const FormDemo6 = () => {
-  const {register,handleSubmit} =useForm()
+  const {register,handleSubmit,formState:{errors}} =useForm()
   const submitHandler =(data)=>{
       console.log(data)
+  }
+  const ValidationSchema ={
+
+                name:{
+                        required:{
+                          value:true,
+                          message:"Name Is Required*"
+                        }
+                },
+                color:{
+                  required:{
+                    value:true,
+                    message:"Color Is Required*"
+                  }
+          },
+
+
+
   }
   
   return (
@@ -13,7 +31,12 @@ const FormDemo6 = () => {
      <div>
         <form onSubmit={handleSubmit(submitHandler)}>
           <label htmlFor="">SuperHero Name</label>
-          <input type="text" placeholder='e.g. captain ,hulk,Ironman' />
+          <input type="text" placeholder='e.g. captain ,hulk,Ironman' {...register("heroname",ValidationSchema.name)}/>
+          <span style={{color:'red'}}>
+            {
+              errors.heroname?.message 
+            }
+          </span>
           <br />
           <label htmlFor="">Choose Your Main Super Power</label>
           <select>
@@ -26,7 +49,12 @@ const FormDemo6 = () => {
           </select>
           <br />
           <label htmlFor="">Costume Color</label>
-          <input type="text" {...register("Costume Color")} />
+          <input type="text" {...register("CostumeColor",ValidationSchema.color)} />
+          <span style={{color:'red'}}>
+            {
+              errors.CostumeColor?.message 
+            }
+          </span>
           <br />
           <label htmlFor="">Do you Have a MultiPower : </label>
          Yes <input type="radio"  value="Yes" {...register("Multipower")} />
@@ -36,7 +64,7 @@ const FormDemo6 = () => {
         </form>
      </div>
 
-
+                <h1>Validation Is Completed</h1>
     </div>
   )
 }

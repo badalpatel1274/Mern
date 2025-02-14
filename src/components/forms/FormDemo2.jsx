@@ -3,9 +3,17 @@ import { useForm } from 'react-hook-form'
 
 const FormDemo2 = () => {
 
- const {register,handleSubmit} =useForm()
+ const {register,handleSubmit,formState:{errors}} =useForm()
 const submitHandler =(data)=>{
     console.log(data)
+}
+const validationSchema={
+  name: {
+    required: {
+      value: true,
+      message: "Name Is Required*"
+    }
+  },
 }
 
   return (
@@ -15,7 +23,14 @@ const submitHandler =(data)=>{
       <form onSubmit={handleSubmit(submitHandler)}>
       <div>
 <label htmlFor="">Name</label>
-<input type="text" {...register("name")} /> <br />
+<input type="text" {...register("name",validationSchema.name)} /> 
+<span style={{color:'red'}}>
+            {
+              errors.name?.message 
+            }
+          </span>
+<br />
+
 <label htmlFor="">Gender</label><br />
 
 Male:<input type="radio" value="male" name='male' {...register("gender")} />
@@ -46,6 +61,7 @@ return : <input type="checkbox"  value="return" {...register("choices")}/>
 
       </div>
 
+      <h1>Validation Is Completed</h1>
 
 
           

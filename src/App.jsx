@@ -20,6 +20,7 @@ import FormDemo5 from './components/forms/FormDemo5'
 import FormDemo6 from './components/forms/FormDemo6'
 import FormDemo7 from './components/forms/FormDemo7'
 import FormDemo8 from './components/forms/FormDemo8'
+import ValidationForm1 from './components/forms/ValidationForm1'
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
       <Route path='/formdemo6' element={<FormDemo6/>}></Route>
       <Route path='/formdemo7' element={<FormDemo7/>}></Route>
       <Route path='/formdemo8' element={<FormDemo8/>}></Route>
+      <Route path='/validate1' element={<ValidationForm1/>}></Route>
 
 
       <Route path='/*' element={<Hotstar404/>}></Route>

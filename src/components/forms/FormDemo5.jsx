@@ -3,43 +3,89 @@ import { useForm } from 'react-hook-form'
 
 const FormDemo5 = () => {
 
-     const {register,handleSubmit} =useForm()
-    const submitHandler =(data)=>{
-        console.log(data)
-    }
-    
-  return (
-     <div style={{textAlign:'center'}}>
-        <h1>Hotel Booking</h1>
-     <div>
-        <form onSubmit={handleSubmit(submitHandler)}>
-            <label htmlFor="">Full Name</label>
-            <input type="text" {...register("name")} />
-            <br />
-            <label htmlFor="">Check In</label>
-            <input type="date" {...register("checkin")} />
-            <br />
-            <label htmlFor="">Check out</label>
-            <input type="date"  {...register("checkout")} />
-            <br />
-            <label htmlFor="">Room Type</label>
-            <select>
-                <option value="room"   {...register("single")}>Single Room</option>
-                <option value="room"   {...register("double")}>Double Room</option>
-                <option value="room"   {...register("suite")}>Suite</option>
+  const { register, handleSubmit, formState: { errors } } = useForm()
+  const submitHandler = (data) => {
+    console.log(data)
+  }
+  const validationSchema = {
+    name: {
+      required: {
+        value: true,
+        message: "Name Is Required*"
+      }
+    },
+    checkIN: {
+      required: {
+        value: true,
+        message: "Check IN date Is Required*"
+      }
+    },
+    checkOUt: {
+      required: {
+        value: true,
+        message: "Check OUT date Is Required*"
+      }
+    },
+    Guest:{
+      required:{
+        value:true,
+        message:"Fill this details*"
+      }
+},
+  }
 
-            </select>
-            <br />
-            <label htmlFor="">NO.of Guest</label>
-            <input type="number" {...register("guest")} />
-            <br />
-            <input type="submit" value="Book Now" />
+  return (
+    <div style={{ textAlign: 'center' }}>
+      <h1>Hotel Booking</h1>
+      <div>
+        <form onSubmit={handleSubmit(submitHandler)}>
+          <label htmlFor="">Full Name</label>
+          <input type="text" {...register("name",validationSchema.name)} />
+          <span style={{color:'red'}}>
+            {
+              errors.name?.message 
+            }
+          </span>
+          <br />
+          <label htmlFor="">Check In</label>
+          <input type="date" {...register("checkin",validationSchema.checkIN)} />
+          <span style={{color:'red'}}>
+            {
+              errors.checkin?.message 
+            }
+          </span>
+          <br />
+          <label htmlFor="">Check out</label>
+          <input type="date"  {...register("checkout",validationSchema.checkOUt)} />
+          <span style={{color:'red'}}>
+            {
+              errors.checkout?.message 
+            }
+          </span>
+          <br />
+          <label htmlFor="">Room Type</label>
+          <select>
+            <option value="single"   {...register("room")}>Single Room</option>
+            <option value="double"   {...register("room")}>Double Room</option>
+            <option value="suite"   {...register("room")}>Suite</option>
+
+          </select>
+          <br />
+          <label htmlFor="">NO.of Guest</label>
+          <input type="number" {...register("guest",validationSchema.Guest)} />
+          <span style={{color:'red'}}>
+            {
+              errors.guest?.message 
+            }
+          </span>
+          <br />
+          <input type="submit" value="Book Now" />
 
 
         </form>
-     </div>
+      </div>
 
-
+              <h1>Validation is Completed</h1>
     </div>
   )
 }

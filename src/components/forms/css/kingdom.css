@@ -1,0 +1,22 @@
+*{
+    margin: 0;padding: 0;
+
+}
+
+.bg img{
+    /* background-image: url("https://t4.ftcdn.net/jpg/06/46/07/31/360_F_646073123_S8G52gc8ZI8tvsVgd9ft65xIM86efkuJ.jpg"); */
+    height: 700px;
+    width: 1500px;
+    position: relative;
+}
+
+.info{
+    position: absolute;
+    top: 150px;
+    left: 500px;
+    box-shadow:  0 15px 25px rgba(180, 116, 116, 0.2);
+    background-color: rgba(187, 107, 107, 0.2);
+    font-weight: 700;
+    color: rgb(249, 240, 240);
+
+}
