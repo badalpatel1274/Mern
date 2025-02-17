@@ -21,15 +21,24 @@ import FormDemo6 from './components/forms/FormDemo6'
 import FormDemo7 from './components/forms/FormDemo7'
 import FormDemo8 from './components/forms/FormDemo8'
 import ValidationForm1 from './components/forms/ValidationForm1'
+import Footer from './components/Footer'
+import Header from './components/Header'
+import ArrayDemo4 from './components/ArrayDemo4'
+import ArrayDemo3 from './components/ArrayDemo3'
+import ArrayDemo5 from './components/ArrayDemo5'
+import InputDemo1 from './components/InputDemo1'
+import ApiDemo1 from './components/api/ApiDemo1'
 
 
 function App() {
 
   return (
     <>
-    <HotstarNav/>
+    <Navbar/>
+    <ApiDemo1/>
+   {/* <InputDemo1/> */}
+    {/* <HotstarNav/>
     <Routes>
-      {/* <Route path='/' element={<HotstarWelcome/>}></Route> */}
       <Route path='/' element={<HotstarHome/>}></Route>
       <Route path='/play/:id' element={<Play/>}></Route>
       <Route path='/movies' element={<HotstarMovies/>}></Route>
@@ -47,7 +56,7 @@ function App() {
 
 
       <Route path='/*' element={<Hotstar404/>}></Route>
-    </Routes>
+    </Routes> */}
     </>
   )
 }
