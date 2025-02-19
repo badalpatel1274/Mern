@@ -30,6 +30,8 @@ import InputDemo1 from './components/InputDemo1'
 import ApiDemo1 from './components/api/ApiDemo1'
 import MovieSearch from './components/omdb/MovieSearch'
 import MovieDetails from './components/omdb/MovieDetails'
+import PostApiDemo1 from './components/api/PostApiDemo1'
+import PostApiDemo2 from './components/api/PostApiDemo2'
 
 
 function App() {
@@ -56,6 +58,9 @@ function App() {
       <Route path='/formdemo8' element={<FormDemo8/>}></Route> */}
       <Route path='/moviesearch' element={<MovieSearch/>}></Route>
       <Route path='/moviedetail/:id' element={<MovieDetails/>}></Route>
+      <Route path='/postapidemo1' element={<PostApiDemo1/>}></Route>
+      <Route path='/postapidemo2' element={<PostApiDemo2/>}></Route>
+        <Route path='/apidemo1' element={<ApiDemo1/>}></Route>
       <Route path='/validate1' element={<ValidationForm1/>}></Route>
 
 

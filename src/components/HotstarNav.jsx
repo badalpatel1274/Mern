@@ -49,6 +49,14 @@ const HotstarNav = () => {
         <li className="nav-item">
           <Link className="nav-link" to="/moviesearch">Movie Search</Link>
         </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/postapidemo1">PosApidemo1</Link>
+        </li>        <li className="nav-item">
+          <Link className="nav-link" to="/postapidemo2">PostApDemo2</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/apidemo1">Api demo1</Link>
+        </li>
        
       </ul>
     </div>

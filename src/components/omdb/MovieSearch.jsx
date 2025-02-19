@@ -1,5 +1,5 @@
 import axios from 'axios'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const MovieSearch = () => {
@@ -10,7 +10,9 @@ const MovieSearch = () => {
     const res = await axios.get(`http://www.omdbapi.com/?apikey=67d585d7&s=${searchName}`)
     console.log(res.data)
     setmoviesData(res.data.Search)
+   
   }
+
   return (
     <div>
       <h1>Movie search</h1>
