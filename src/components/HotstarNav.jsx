@@ -16,7 +16,7 @@ const HotstarNav = () => {
         <li className="nav-item">
           <Link className="nav-link" to="/movies">Movies</Link>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <Link className="nav-link" to="/sports">Sports</Link>
         </li>
         <li className="nav-item">
@@ -45,6 +45,9 @@ const HotstarNav = () => {
         </li>
          <li className="nav-item">
           <Link className="nav-link" to="/validate1">Validate1</Link>
+        </li> */}
+        <li className="nav-item">
+          <Link className="nav-link" to="/moviesearch">Movie Search</Link>
         </li>
        
       </ul>

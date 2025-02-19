@@ -28,35 +28,39 @@ import ArrayDemo3 from './components/ArrayDemo3'
 import ArrayDemo5 from './components/ArrayDemo5'
 import InputDemo1 from './components/InputDemo1'
 import ApiDemo1 from './components/api/ApiDemo1'
+import MovieSearch from './components/omdb/MovieSearch'
+import MovieDetails from './components/omdb/MovieDetails'
 
 
 function App() {
 
   return (
     <>
-    <Navbar/>
-    <ApiDemo1/>
+    {/* <Navbar/> */}
+    {/* <ApiDemo1/> */}
    {/* <InputDemo1/> */}
-    {/* <HotstarNav/>
+    <HotstarNav/>
     <Routes>
       <Route path='/' element={<HotstarHome/>}></Route>
       <Route path='/play/:id' element={<Play/>}></Route>
       <Route path='/movies' element={<HotstarMovies/>}></Route>
       <Route path='/sports' element={<HotstarSports/>}></Route>
       <Route path='/tvshow' element={<HotstarTvShows/>}></Route>
-      <Route path='/formdemo1' element={<FormDemo1/>}></Route>
+      {/* <Route path='/formdemo1' element={<FormDemo1/>}></Route>
       <Route path='/formdemo2' element={<FormDemo2/>}></Route>
       <Route path='/formdemo3' element={<FormDemo3/>}></Route>
       <Route path='/formdemo4' element={<FormDemo4/>}></Route>
       <Route path='/formdemo5' element={<FormDemo5/>}></Route>
       <Route path='/formdemo6' element={<FormDemo6/>}></Route>
       <Route path='/formdemo7' element={<FormDemo7/>}></Route>
-      <Route path='/formdemo8' element={<FormDemo8/>}></Route>
+      <Route path='/formdemo8' element={<FormDemo8/>}></Route> */}
+      <Route path='/moviesearch' element={<MovieSearch/>}></Route>
+      <Route path='/moviedetail/:id' element={<MovieDetails/>}></Route>
       <Route path='/validate1' element={<ValidationForm1/>}></Route>
 
 
       <Route path='/*' element={<Hotstar404/>}></Route>
-    </Routes> */}
+    </Routes>
     </>
   )
 }
