@@ -46,6 +46,15 @@ const HotstarNav = () => {
          <li className="nav-item">
           <Link className="nav-link" to="/validate1">Validate1</Link>
         </li> */}
+         <li className="nav-item">
+          <Link className="nav-link" to="/formdemo4">FormDemo4</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/validate1">Validate1</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/formdemo2">FormDemo2</Link>
+        </li>
         <li className="nav-item">
           <Link className="nav-link" to="/moviesearch">Movie Search</Link>
         </li>

@@ -52,7 +52,7 @@ const validationSchema={
 
   return (
     <div style={{textAlign:'center'}}>
-    <h1>Simple Practice</h1>
+    <h1>Validation Form</h1>
     <div>
       <form onSubmit={handleSubmit(submitHandler)}>
 

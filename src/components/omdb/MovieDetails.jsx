@@ -21,7 +21,7 @@ const MovieDetails = () => {
     searchDetail()  
   }, [id]) 
   if (!detailsData) {
-    return <h2>Loading...</h2>
+    return <h2 style={{textAlign:'center', backgroundColor:'rgba(60, 47, 47, 0.6), rgba(0, 0, 0, 0.9)', color:'white',height:'700px', alignContent:'center', fontSize:'40px'}}>Loading...</h2>
   }
 
   return (
